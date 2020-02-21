@@ -2,7 +2,7 @@
 
 ### Summary
 
-#### This application contains two pages
+#### This application contains two pages.
 1. Map page. The user can click a point near the location on the map, and then the start button will appear at the bottom of the screen. Click the start button to enter the path navigation mode.
 2. Itinerary summary page. In the map page, when the user moves near the destination (within 6m of the selected location), the navigation will automatically end and this page will pop up. The page shows the user's moving path, driving time and total mileage on the map.
 
