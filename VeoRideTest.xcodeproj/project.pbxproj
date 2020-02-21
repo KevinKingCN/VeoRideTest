@@ -14,7 +14,6 @@
 		72985F4123FFFFE100002780 /* VRTripSummaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72985F4023FFFFE100002780 /* VRTripSummaryViewController.swift */; };
 		72D88F7023FD09E400726418 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72D88F6F23FD09E400726418 /* AppDelegate.swift */; };
 		72D88F7223FD09E400726418 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72D88F7123FD09E400726418 /* SceneDelegate.swift */; };
-		72D88F7423FD09E400726418 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72D88F7323FD09E400726418 /* ViewController.swift */; };
 		72D88F7723FD09E400726418 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72D88F7523FD09E400726418 /* Main.storyboard */; };
 		72D88F7923FD09E500726418 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 72D88F7823FD09E500726418 /* Assets.xcassets */; };
 		72D88F7C23FD09E500726418 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72D88F7A23FD09E500726418 /* LaunchScreen.storyboard */; };
@@ -34,7 +33,6 @@
 		72D88F6C23FD09E400726418 /* VeoRideTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VeoRideTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		72D88F6F23FD09E400726418 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		72D88F7123FD09E400726418 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		72D88F7323FD09E400726418 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		72D88F7623FD09E400726418 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		72D88F7823FD09E500726418 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		72D88F7B23FD09E500726418 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -92,7 +90,6 @@
 				72D88F6F23FD09E400726418 /* AppDelegate.swift */,
 				72D88F7123FD09E400726418 /* SceneDelegate.swift */,
 				72F48CE523FD32DE00462137 /* VRPrefixHeader.swift */,
-				72D88F7323FD09E400726418 /* ViewController.swift */,
 				72F48CEA23FE40AA00462137 /* Tools */,
 				72F48CE723FD80B100462137 /* Singletons */,
 				72F48CE223FD2CDC00462137 /* ViewControllers */,
@@ -263,7 +260,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				72D88F7423FD09E400726418 /* ViewController.swift in Sources */,
 				72985F3B23FED01F00002780 /* VRImageTool.swift in Sources */,
 				72F48CE423FD2D5400462137 /* VRHomeViewController.swift in Sources */,
 				72D88F7023FD09E400726418 /* AppDelegate.swift in Sources */,

@@ -27,11 +27,6 @@ class VRHomeViewController: UIViewController, MKMapViewDelegate {
         super.viewDidLoad()
 
         VRLocationManager.shared.enableLocationServices()
-        setupViews()
-    }
-    
-    func setupViews() {
-        
         setupMapView()
     }
     
@@ -141,6 +136,10 @@ class VRHomeViewController: UIViewController, MKMapViewDelegate {
             make.width.equalTo(150)
         }
         
+        UIView.animate(withDuration: 0.3, delay: 0, options: .curveLinear, animations: {[weak self] in
+            self?.view.layoutIfNeeded()
+        }, completion: nil)
+        
         button.setTitle("Exit navigation", for: .normal)
         button.setTitleColor(.systemRed, for: .normal)
         button.setBackgroundImage(UIImageWithColor(.white), for: .normal)
@@ -156,6 +155,7 @@ class VRHomeViewController: UIViewController, MKMapViewDelegate {
         mapView.removeOverlay(route.polyline)
         
         startBtn = nil
+        startDate = nil
         destnAnnotation = nil
     }
     
@@ -185,7 +185,7 @@ class VRHomeViewController: UIViewController, MKMapViewDelegate {
             self.route = route
             self.mapView.addOverlay(route.polyline)
             self.mapView.setVisibleMapRect(route.polyline.boundingMapRect,
-                                           edgePadding: UIEdgeInsets(top: 40, left: 30, bottom: 40, right: 30),
+                                           edgePadding: UIEdgeInsets(top: 70, left: 50, bottom: 130, right: 50),
                                            animated: true)
         }
     }
@@ -213,7 +213,7 @@ class VRHomeViewController: UIViewController, MKMapViewDelegate {
         }
         
         if isFirstLocation {
-            mapView.setCenter(userLocation.coordinate, animated: true)
+            mapView.setCenter(userLocation.coordinate, animated: false)
             isFirstLocation = false
         }
         
