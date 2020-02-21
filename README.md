@@ -1,3 +1,5 @@
+Note: if you use the simulator to run this project, please select a location under the debug menu of the simulator.
+
 # VeoRideTest
 
 ### Summary
