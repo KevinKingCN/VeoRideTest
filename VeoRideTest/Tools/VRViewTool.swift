@@ -38,7 +38,8 @@ class VRViewTool: NSObject {
     // MARK: 获取当前屏幕上的控制器
     class var topViewController: UIViewController? {
         var resultVC: UIViewController?
-        resultVC = self._topViewController(UIApplication.shared.keyWindow?.rootViewController)
+        let keyWindow = UIApplication.shared.windows.filter{ $0.isKeyWindow }.first
+        resultVC = self._topViewController(keyWindow?.rootViewController)
         while ((resultVC?.presentedViewController) != nil) {
             resultVC = self._topViewController(resultVC?.presentedViewController)
         }
