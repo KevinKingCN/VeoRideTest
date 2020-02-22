@@ -15,13 +15,13 @@ class VRHomeViewController: UIViewController, MKMapViewDelegate {
     var startBtn: UIButton?
     var destnAnnotation: MKPointAnnotation?
     
-    var isFirstLocation = true
-    var isNavigating = false
+    var isFirstLocation = true  // The first time to get user location
+    var isNavigating = false    // Navigation is in progress
     var userLocation = CLLocation(latitude: 41.883497, longitude: -87.664066) // Default is Chicago
     
-    var startDate: Date?
-    var starLocation = CLLocation()
-    var route = MKRoute()
+    var startDate: Date?    // Date of starting navigation
+    var startLocation = CLLocation() // Location of start point
+    var route = MKRoute()   // Route of navigation
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -127,7 +127,7 @@ class VRHomeViewController: UIViewController, MKMapViewDelegate {
         
         isNavigating = true
         startDate = Date()
-        starLocation = userLocation
+        startLocation = userLocation
         requestToNavigate()
         
         // Change start button to exit button
@@ -193,7 +193,7 @@ class VRHomeViewController: UIViewController, MKMapViewDelegate {
     func finishNavigating() {
         
         let vc = VRTripSummaryViewController()
-        vc.startCoordinate = starLocation.coordinate
+        vc.startCoordinate = startLocation.coordinate
         vc.destnCoordinate = destnAnnotation!.coordinate
         vc.route = route
         vc.startDate = startDate
@@ -218,6 +218,7 @@ class VRHomeViewController: UIViewController, MKMapViewDelegate {
         }
         
         if isNavigating {
+            // Keep the user's position in the center of the screen during navigation
             mapView.setCenter(userLocation.coordinate, animated: true)
         }
         

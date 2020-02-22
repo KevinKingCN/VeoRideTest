@@ -11,7 +11,7 @@ import UIKit
 class VRViewTool: NSObject {
     
     
-
+    // Conveniently show a alert view
     static func showAlertView(title: String?, message: String?, currentVC: UIViewController, cancelHandler:((UIAlertAction) -> Void)?, otherBtns:Array<String>?, otherHandler:((Int) -> ())?) {
         
         let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
@@ -35,7 +35,7 @@ class VRViewTool: NSObject {
         currentVC.present(alertController, animated: true, completion: nil)
     }
     
-    // MARK: 获取当前屏幕上的控制器
+    // Get the topest view controller on screen
     class var topViewController: UIViewController? {
         var resultVC: UIViewController?
         let keyWindow = UIApplication.shared.windows.filter{ $0.isKeyWindow }.first
