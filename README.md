@@ -8,6 +8,8 @@ Note: if you use the simulator to run this project, please select a location und
 1. Map page. The user can click a point near his location on the map, and then the start button will appear at the bottom of the screen. Click the start button to enter the route navigation mode.
 2. Trip summary page. In the map page, when the user moves near the destination (within 6m of the selected location), the navigation will automatically be finished and this page will pop up. The page shows the user's moving path, trip time and total mileage on the map.
 
+![Select destination](ScreenShots/2.png)     ![Start navigation](ScreenShots/3.png)     ![The trip summary after arriving at the destination](ScreenShots/4.png )
+
 ### Development steps
 1. To get the requirements, first you should convert these requirements into page sketches on white paper. Design a sketch for each state of the page so that you can clearly know what you need to do.
 2. Make a development task list and development plan according to the sketch.
