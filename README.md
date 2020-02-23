@@ -17,3 +17,8 @@ Note: if you use the simulator to run this project, please select a location und
 4.2 MapKit is introduced to develop map related functions. Create a tap gesture to add an annotation.<br>
 4.3 Consider the display time of start button, and some logic to be handled when exiting the navigation.<br>
 4.4 After the navigation task is completed, when the user jumps to the trip summary page, you need to take in the navigation start / stop time and navigation route, so as to display the path on the thumbnail map, and display the journey time and total mileage on the page.
+
+### Development environment requirements
+* iOS 13.0+ / Mac OS X 10.15+
+* Xcode 11.0+
+* Swift 5.0+
